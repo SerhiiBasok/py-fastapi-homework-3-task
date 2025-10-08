@@ -1,6 +1,6 @@
 from datetime import date
-from pydantic import BaseModel, ConfigDict, EmailStr, field_validator
 from database import accounts_validators
+from pydantic import BaseModel, ConfigDict, EmailStr, field_validator
 
 
 class BaseEmailSchema(BaseModel):
