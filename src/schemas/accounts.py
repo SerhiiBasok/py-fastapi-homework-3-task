@@ -94,3 +94,8 @@ class TokenRefreshResponseSchema(BaseModel):
 
 class PasswordResetRequestSchema(BaseEmailSchema):
     pass
+
+
+class PasswordResetCompleteRequestSchema(BaseEmailSchema):
+    token: str
+    password: str
